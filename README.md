@@ -18,11 +18,15 @@ Linlin Shen<sup>4</sup><br/>
 <sup>3</sup>*Department of Electrical Engineering, National Tsing Hua University, Hsinchu, Taiwan*<br/>
 <sup>4</sup>*Computer Science and Software Engineering, Shenzhen University, Shenzhen, China*<br/>
 
+
 ## Datasets
 
 We build a new dataset called **face2anime**, which is larger and contains more diverse anime styles (e.g., face poses, drawing styles, colors, hairstyles, eye shapes, strokes, facial contours) than selfie2anime. The **face2anime** dataset contains 17,796 images in total, where the number of both anime-faces and natural photo-faces is 8,898. The anime-faces are collected from the Danbooru2019 dataset, which contains many anime characters with various anime styles. We employ a pretrained cartoon face detector to select images containing anime-faces. For natural-faces, we randomly select 8,898 female faces from the CelebA-HQ dataset. All images are aligned with facial landmarks and are cropped to size 128 × 128. We separate images from each domain into a training set with 8,000 images and a test set with 898 images.
 
 You can download the **face2anime** dataset from [Google Drive](https://drive.google.com/file/d/1Exc6QumR2r0aFUtfHOdAgle4F4I9zwF3/view?usp=sharing).
+
+
+## Citation
 
 If you find this work useful or use the **face2anime** dataset, please cite our [paper](https://arxiv.org/abs/2102.12593):
 ```bibtex
