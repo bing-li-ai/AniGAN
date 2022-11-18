@@ -1,0 +1,4 @@
+.idea/
+result_dir/
+__pycache__
+*.pyc
