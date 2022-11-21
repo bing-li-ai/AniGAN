@@ -18,11 +18,6 @@ Linlin Shen<sup>4</sup><br/>
 <sup>3</sup>*Department of Electrical Engineering, National Tsing Hua University, Hsinchu, Taiwan*<br/>
 <sup>4</sup>*Computer Science and Software Engineering, Shenzhen University, Shenzhen, China*<br/>
 
-## Datasets
-
-We build a new dataset called **face2anime**, which is larger and contains more diverse anime styles (e.g., face poses, drawing styles, colors, hairstyles, eye shapes, strokes, facial contours) than selfie2anime. The **face2anime** dataset contains 17,796 images in total, where the number of both anime-faces and natural photo-faces is 8,898. The anime-faces are collected from the Danbooru2019 dataset, which contains many anime characters with various anime styles. We employ a pretrained cartoon face detector to select images containing anime-faces. For natural-faces, we randomly select 8,898 female faces from the CelebA-HQ dataset. All images are aligned with facial landmarks and are cropped to size 128 × 128. We separate images from each domain into a training set with 8,000 images and a test set with 898 images.
-
-You can download the **face2anime** dataset from [Google Drive](https://drive.google.com/file/d/1Exc6QumR2r0aFUtfHOdAgle4F4I9zwF3/view?usp=sharing).
 
 ## Installation
 
@@ -48,6 +43,15 @@ python test.py \
 * `SOURCE_IMG_PATH`: path of the source image. Two examples are provided: `input_img_examples/1795111.png` and `input_img_examples/2773005.png`.
 * `REFERENCE_IMG_PATH`: path of the reference image. Two examples are provided: `input_img_examples/imgHQ11831.png` and `input_img_examples/imgHQ11853.png`.
 * `SAVE_PATH`: directory path to save the result image. Optional and default value is `result_dir`.
+
+
+## Datasets
+
+We build a new dataset called **face2anime**, which is larger and contains more diverse anime styles (e.g., face poses, drawing styles, colors, hairstyles, eye shapes, strokes, facial contours) than selfie2anime. The **face2anime** dataset contains 17,796 images in total, where the number of both anime-faces and natural photo-faces is 8,898. The anime-faces are collected from the Danbooru2019 dataset, which contains many anime characters with various anime styles. We employ a pretrained cartoon face detector to select images containing anime-faces. For natural-faces, we randomly select 8,898 female faces from the CelebA-HQ dataset. All images are aligned with facial landmarks and are cropped to size 128 × 128. We separate images from each domain into a training set with 8,000 images and a test set with 898 images.
+
+You can download the **face2anime** dataset from [Google Drive](https://drive.google.com/file/d/1Exc6QumR2r0aFUtfHOdAgle4F4I9zwF3/view?usp=sharing).
+
+
 
 
 ## Citation
