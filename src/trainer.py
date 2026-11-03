@@ -37,7 +37,7 @@ class Trainer(nn.Module):
         self.model.gen_test = copy.deepcopy(self.model.gen)
 
     def load_ckpt(self, ckpt_name):
-        state_dict = torch.load(ckpt_name)
+        state_dict = torch.load(ckpt_name, weights_only=True)
         self.model.gen.load_state_dict(state_dict['gen'])
         self.model.gen_test.load_state_dict(state_dict['gen_test'])
         print('----------load success----------')
